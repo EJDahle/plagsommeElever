@@ -3,11 +3,11 @@ import random as rn
 
 def generer_tekst():
     knapp.destroy()
-    navn = ["Kevin, ", "TC, ", "Jørgen, ", "Camilla, ", "Maria, ", "Are, ", "Christian, ", "Khyle, "]
+    navn = ["Aya, ", "Annabelle, ", "Celine, ", "Hanna, ", "Hedda, ", "Isabella, ", "Nadia, ", "Mats, ", "Sara, ", "Synnøve, ", "Ulrikke, ", "Line, ", "Ole Fridtjof, ", "Eva Kristin, ", "Randi, ", "Anette, "]
     del1 = ["som lærer synes jeg du er ", "du er ", "det fremstår som at du er ", "som elev er du ", "jeg er glad for at du er ", "i undervisningen er du "]
-    del2 = ["mest sannsynlig ", "meget ", "veldig ", "", "sinnsykt ", "flink i å være ", "fortsatt "]
-    del3 = ["forståelsesfull", "oppmuntrende", "fornøyd", "inspirerende", "arbeidsom", "oppegående", "til stede", "god medelev", "smart", "tilgivende", "trygg", "empatisk", "klok", "lur", "eksisterende"]
-    del4 = ["!", "?", ".", "", "!?", "?!"]
+    del2 = ["en gang i blant ", "innimellom ", "hjelpsom og ", "åpenbart ", "super ", "mest sannsynlig ", "meget ", "veldig ", "", "sinnsykt ", "flink i å være ", "fortsatt ", "omsorgsfull og "]
+    del3 = ["våken i timen", "støttende", "forståelsesfull", "oppmuntrende", "fornøyd", "inspirerende", "arbeidsom", "oppegående", "til stede", "god medelev", "smart", "tilgivende", "trygg", "empatisk", "klok", "lur", "eksisterende"]
+    del4 = ["!", "?", ".", "", "!?", "?!", "!!!", "!!!!!"]
     tekst.delete(0, "end")
     n = len(navn) - 1
     r = rn.randint(0, n)
@@ -25,7 +25,7 @@ def generer_tekst():
 
 root = tk.Tk()
 
-tekst = tk.Entry(root, width = 50, font = ("Arial", 30))
+tekst = tk.Entry(root, width = 70, font = ("Arial", 30))
 tekst.pack()
 
 knapp = tk.Button(root, text = "Trykk her!", font = ("Arial", 20), command = generer_tekst)
